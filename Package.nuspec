@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="2.5">
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>Teobugslayer.CoreRT.LLD</id>
+
+        <!-- The package version number that is used when resolving dependencies -->
+        <version>10.0.0-pre1</version>
+
+        <!-- Authors contain text that appears directly on the gallery -->
+        <authors>Todor Totev</authors>
+
+        <!--
+            Owners are typically nuget.org identities that allow gallery
+            users to easily find other packages by the same owners.
+        -->
+        <owners>TBD</owners>
+
+        <!-- Project URL provides a link for the gallery -->
+        <projectUrl>https://github.com/teobugslayer/corert-lld</projectUrl>
+
+        <!-- License information is displayed on the gallery -->
+        <license type="expression">MIT</license>
+
+        <!-- The icon is used in Visual Studio's package manager UI -->
+        <!--<iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>-->
+
+        <!--
+            If true, this value prompts the user to accept the license when
+            installing the package.
+        -->
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+        <!-- Any details about this particular release -->
+        <releaseNotes>Support for LLD 10.0.0</releaseNotes>
+
+        <!--
+            The description can be used in package manager UI. Note that the
+            nuget.org gallery uses information you add in the portal.
+        -->
+        <description>This package enables CoreRT to use LLD instead of the default Microsoft Visual C++ linker</description>
+
+        <!-- Copyright information -->
+        <copyright>Copyright ©2020-current Todor Totev</copyright>
+
+        <!-- Tags appear in the gallery and can be used for tag searches -->
+        <tags>dotnet corert llvm</tags>
+
+    </metadata>
+
+    <!-- A readme.txt to display when the package is installed -->
+    <!--<files>
+        <file src="readme.txt" target="" />
+    </files>-->
+</package>
