@@ -1,6 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
- <PropertyGroup>
-   <IlcLinker>$(MSBuildThisFileDirectory)..\tools\win-x64\lld-link.exe</IlcLinker>
-   <CppLinker>$(MSBuildThisFileDirectory)..\tools\win-x64\lld-link.exe</CppLinker>
- </PropertyGroup>
+  <PropertyGroup>
+    <IlcLinker>$(MSBuildThisFileDirectory)..\tools\win-x64\lld-link.exe</IlcLinker>
+    <CppLinker>$(MSBuildThisFileDirectory)..\tools\win-x64\lld-link.exe</CppLinker>
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <AdditionalNativeLibraryDirectories Include="$(MSBuildThisFileDirectory)..\nativelib\win-x64" Condition="$(RuntimeIdentifier.StartsWith('win-x64'))" />
+	<AdditionalNativeLibraryDirectories Include="$(MSBuildThisFileDirectory)..\nativelib\win-x86" Condition="$(RuntimeIdentifier.StartsWith('win-x86'))" />
+  </ItemGroup>
 </Project>
